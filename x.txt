@@ -1,0 +1,37 @@
+1599,asser,90
+1244,syed,95
+1478,klifa,99
+1599,asser,73
+1244,syed,74
+1478,klifa,70
+1599,asser,50
+1244,syed,0
+1478,klifa,45
+1599,asser,75
+1244,syed,80
+1478,klifa,60
+1599,asser,64
+1244,syed,0
+1478,klifa,2
+dates=[]
+day={}
+mon={}
+while True:
+    date=input('Enter  mm/dd :')
+    if date is 'D':
+        break
+    d=date.split('/')
+    dates.append(d)
+    if d[0] in mon :
+        mon[d[0]] +=1
+    else:
+        mon[d[0]]=1
+    if d[1] in day:
+        day[d[1]]+=1
+    else:
+        day[d[1]] = 1
+print(dates)
+print(mon)
+print(day)
+print(mon['1'])
+print(day['25'])
